@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Lato';
+        font-weight: 300;
+        src: local('Lato'),
+           url('/fonts/lato/Lato-Light.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Lato';
+        font-weight: 400;
+        src: local('Lato'),
+           url('/fonts/lato/Lato-Regular.woff') format('woff');
+    }
+}
+
+@layer utilities 
+{
+    input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button 
+    {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] 
+    {
+        -moz-appearance: textfield;
+        text-align: right;
+    }
+
+    input:focus
+    {
+        outline: none;
+    }
+}
